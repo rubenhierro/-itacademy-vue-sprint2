@@ -11956,29 +11956,4 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-
-.nav {
-  height: 6.25rem;
-}
-
-@media screen and (max-width: 576px) {
-  .claim {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .claim {
-    width: 75%;
-  }
-}
 /*# sourceMappingURL=custom.css.map */
