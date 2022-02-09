@@ -1,0 +1,23 @@
+{
+  "name": "itacademy-vue-sprint2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css scss/custom.css --content index.html -o css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenhierro/itacademy-vue-sprint2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubenhierro/itacademy-vue-sprint2/issues"
+  },
+  "homepage": "https://github.com/rubenhierro/itacademy-vue-sprint2#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
