@@ -12005,6 +12005,18 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 768px) {
+  #faqs {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  #faqs-accordion {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .claim {
     text-align: center;

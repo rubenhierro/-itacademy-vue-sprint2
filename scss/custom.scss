@@ -51,6 +51,18 @@ $secondary: #fa5959;
   }
 }
 
+#faqs {
+    @include media-breakpoint-up(md) {
+        margin-top: 200px;
+    }
+}
+
+#faqs-accordion {
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+  }
+
 // Mobil
 @media screen and (max-width: 576px) {
   .claim {
