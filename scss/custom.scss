@@ -37,6 +37,20 @@ $secondary: #fa5959;
   }
 }
 
+#card2 {
+  @include media-breakpoint-up(md) {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+#card3 {
+  @include media-breakpoint-up(md) {
+    position: relative;
+    top: 6rem;
+  }
+}
+
 // Mobil
 @media screen and (max-width: 576px) {
   .claim {

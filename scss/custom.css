@@ -11991,6 +11991,20 @@ fieldset:disabled .btn {
   border: none;
 }
 
+@media (min-width: 768px) {
+  #card2 {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #card3 {
+    position: relative;
+    top: 6rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .claim {
     text-align: center;
