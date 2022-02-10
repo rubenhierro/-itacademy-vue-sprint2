@@ -3,10 +3,39 @@ $secondary: #fa5959;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.nav {
+.main-menu {
   height: 6.25rem;
 }
 
+.features {
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
+}
+
+#tab-content {
+  //   border-bottom: 2px solid red;
+
+  @include media-breakpoint-down(sm) {
+    & > ul {
+      display: block;
+      text-align: center;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    & > ul {
+      display: flex;
+      text-align: center;
+    }
+  }
+}
+
+.nav-tabs {
+  border: none;
+  .active {
+    border: none;
+  }
+}
 
 // Mobil
 @media screen and (max-width: 576px) {

@@ -11957,8 +11957,38 @@ fieldset:disabled .btn {
   }
 }
 
-.nav {
+.main-menu {
   height: 6.25rem;
+}
+
+@media (min-width: 768px) {
+  .features {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #tab-content > ul {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  #tab-content > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .active {
+  border: none;
 }
 
 @media screen and (max-width: 576px) {
