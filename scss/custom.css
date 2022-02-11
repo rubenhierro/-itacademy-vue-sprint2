@@ -12013,14 +12013,14 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 768px) {
-  #card2 {
+  .card:nth-child(2) {
     position: relative;
     top: 3rem;
   }
 }
 
 @media (min-width: 768px) {
-  #card3 {
+  .card:nth-child(3) {
     position: relative;
     top: 6rem;
   }

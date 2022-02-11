@@ -67,14 +67,14 @@ $accordion-button-focus-box-shadow: none;
   }
 }
 
-#card2 {
+.card:nth-child(2) {
   @include media-breakpoint-up(md) {
     position: relative;
     top: 3rem;
   }
 }
 
-#card3 {
+.card:nth-child(3) {
   @include media-breakpoint-up(md) {
     position: relative;
     top: 6rem;
