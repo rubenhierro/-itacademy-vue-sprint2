@@ -1,6 +1,26 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
+$nav-link-color: gray;
+$nav-link-hover-color: $secondary;
+$nav-tabs-link-active-color: $secondary;
+$nav-tabs-border-color: $secondary;
+$nav-tabs-link-active-border-color: $secondary;
+$nav-tabs-border-width: 3px;
+
+// Style anchor elements.
+$link-color: $primary !default;
+$link-decoration: underline !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: $secondary;
+$link-hover-decoration: null !default;
+
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $secondary;
+$accordion-icon-active-color:  $secondary;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .main-menu {
@@ -86,7 +106,7 @@ footer {
       margin: 0;
       width: 100%;
     }
- 
+
     #input-email {
       margin-bottom: 1em;
       display: grid;
@@ -96,11 +116,12 @@ footer {
 
 #foot {
   background-color: $blue-800;
+  $nav-link-color: red;
   @include media-breakpoint-down(sm) {
-      padding-top: 2em;
-      padding-bottom: 2em;
-    }
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
+}
 
 .social-icons {
   ul {
@@ -115,6 +136,14 @@ footer {
   li {
     display: inline;
     margin: 10px;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: $secondary;
   }
 }
 
