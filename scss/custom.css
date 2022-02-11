@@ -12007,7 +12007,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 768px) {
   #faqs {
-    margin-top: 200px;
+    margin-top: 12.5rem;
   }
 }
 
@@ -12015,6 +12015,66 @@ fieldset:disabled .btn {
   #faqs-accordion {
     width: 50%;
   }
+}
+
+footer {
+  margin: 5rem 0 0 0;
+  color: #fff;
+}
+
+#contact {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  #contact-content {
+    margin: auto;
+    width: 35%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #contact-form > button {
+    margin: 0;
+    width: 100%;
+  }
+  #contact-form #input-email {
+    margin-bottom: 1em;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+#foot {
+  background-color: #052c65;
+}
+
+@media (max-width: 575.98px) {
+  #foot {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+.social-icons ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin: 10px;
 }
 
 @media screen and (max-width: 576px) {
