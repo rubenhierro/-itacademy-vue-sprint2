@@ -1,23 +1,19 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
-$nav-link-color: gray;
+$nav-link-color: black;
 $nav-link-hover-color: $secondary;
 $nav-tabs-link-active-color: $secondary;
 $nav-tabs-border-color: $secondary;
 $nav-tabs-link-active-border-color: $secondary;
-$nav-tabs-border-width: 3px;
+$nav-tabs-border-color: $secondary;
 
-// Style anchor elements.
-$link-color: $primary !default;
-$link-decoration: underline !default;
-$link-shade-percentage: 20% !default;
-$link-hover-color: $secondary;
-$link-hover-decoration: null !default;
+$navbar-light-hover-color: $secondary;
+$navbar-dark-hover-color: $secondary;
 
 $accordion-button-active-bg: none;
 $accordion-button-active-color: $secondary;
-$accordion-icon-active-color:  $secondary;
+$accordion-icon-active-color: $secondary;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
 
@@ -27,6 +23,22 @@ $accordion-button-focus-box-shadow: none;
   height: 6.25rem;
 }
 
+.claim {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 75%;
+  }
+}
+
+.hero {
+  @include media-breakpoint-up(md) {
+    flex-direction: row-reverse;
+  }
+}
+
 .features {
   @include media-breakpoint-up(md) {
     width: 50%;
@@ -34,8 +46,6 @@ $accordion-button-focus-box-shadow: none;
 }
 
 #tab-content {
-  //   border-bottom: 2px solid red;
-
   @include media-breakpoint-down(sm) {
     & > ul {
       display: block;
@@ -102,7 +112,6 @@ footer {
 #contact-form {
   @include media-breakpoint-down(sm) {
     & > button {
-      // display: block;
       margin: 0;
       width: 100%;
     }
@@ -144,30 +153,5 @@ footer {
 
   a:hover {
     color: $secondary;
-  }
-}
-
-// Mobil
-@media screen and (max-width: 576px) {
-  .claim {
-    text-align: center;
-  }
-}
-
-// Only Tablet
-@media screen and (min-width: 576px) and (max-width: 992px) {
-}
-
-// Tablet & Desktop
-@media screen and (min-width: 768px) {
-  .hero {
-    flex-direction: row-reverse;
-  }
-}
-
-// Only Desktop
-@media screen and (min-width: 992px) {
-  .claim {
-    width: 75%;
   }
 }
