@@ -189,6 +189,10 @@ button {
   text-transform: none;
 }
 
+[role="button"] {
+  cursor: pointer;
+}
+
 button,
 [type="button"],
 [type="submit"] {
@@ -656,6 +660,22 @@ button:not(:disabled),
   border-color: #f8f9fa;
 }
 
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
 .collapse:not(.show) {
   display: none;
 }
@@ -708,7 +728,8 @@ button:not(:disabled),
   isolation: isolate;
 }
 
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
   color: #fa5959;
   background-color: #fff;
   border-color: #fa5959;
@@ -727,6 +748,10 @@ button:not(:disabled),
 
 .nav-justified .nav-item .nav-link {
   width: 100%;
+}
+
+.tab-content > .tab-pane {
+  display: none;
 }
 
 .tab-content > .active {
@@ -903,7 +928,7 @@ button:not(:disabled),
   color: #fa5959;
 }
 
-
+.navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
 }
@@ -925,7 +950,7 @@ button:not(:disabled),
   color: #fa5959;
 }
 
-
+.navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
 }
@@ -1311,6 +1336,10 @@ button:not(:disabled),
   margin-bottom: 1rem !important;
 }
 
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
 .pe-4 {
   padding-right: 1.5rem !important;
 }
@@ -1338,11 +1367,6 @@ button:not(:disabled),
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
-
-.text-white {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
 
 .text-muted {
   --bs-text-opacity: 1;
@@ -1373,6 +1397,12 @@ button:not(:disabled),
 
 .main-menu {
   height: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 575.98px) {
@@ -1518,5 +1548,23 @@ footer {
 
 .social-icons a:hover {
   color: #fa5959;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #5265e1;
+  background-color: white;
+  border-color: #5265e1;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+  color: #fa5959;
+  background-color: white;
+  border-color: #5265e1;
 }
 /*# sourceMappingURL=custom.css.map */
