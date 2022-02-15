@@ -19,12 +19,6 @@ $accordion-button-focus-box-shadow: none;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.main-menu {
-  // height: 6.25rem;
-  // display: flex;
-  // align-items: flex-start;
-}
-
 .claim {
   @include media-breakpoint-down(sm) {
     text-align: center;
