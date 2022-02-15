@@ -37,8 +37,7 @@
                                 <a class="nav-link text-uppercase" href="#">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <button class="btn btn-secondary ps-4 pe-4 text-uppercase"
-                                    type="button">Login</button>
+                                <button class="btn btn-secondary ps-4 pe-4 text-uppercase" type="button">Login</button>
                             </li>
                         </ul>
                     </div>
@@ -259,12 +258,14 @@
             <div id="contact-content" class="col text-center mt-3">
                 <h6>35.000 + Already Joined</h6>
                 <h3>Stay up-to-date with what we're doing</h3>
-                <form id="contact-form">
+                <form id="contact-form" action="" class="needs-validation">
                     <div class=" row row-cols-1 row-cols-md-2 m-2">
                         <div class="col col-md-8">
-                            <input type="text" class="form-control" placeholder="Enter your email" name="email"
-                                id="input-email" required>
+                            <input type="email" class="form-control" placeholder="Enter your email" name="email"
+                                id="input-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         </div>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
                         <div class="col col-md-4  d-grid">
                             <button type="submit" class="btn btn-secondary btn-block">Contact Us</button>
                         </div>
